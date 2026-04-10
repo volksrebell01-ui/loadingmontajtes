@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading...</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+    }
+
+    .loader-container {
+        text-align: center;
+    }
+
+    .logo {
+        width: 120px;
+        animation: spin 1s linear infinite;
+    }
+
+    .text {
+        margin-top: 16px;
+        font-size: 14px;
+        color: #555;
+        letter-spacing: 1px;
+    }
+
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="loader-container">
+    <img src="logo.png" alt="Logo" class="logo">
+    <div class="text">Loading...</div>
+</div>
+
+<script>
+    setTimeout(function() {
+        window.location.href = "https://smansabangunmayang.my.canva.site/add-a-heading/about";
+    }, 3000);
+</script>
+
+</body>
+</html>
